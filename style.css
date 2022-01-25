@@ -1,0 +1,145 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Nunito', sans-serif;
+
+}
+body{
+    background-color: #94D9EA;
+}
+.main-content
+{
+    min-height: 1000px;
+    margin: 20px auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 300px 700px;
+}
+.left-section{
+    grid-column: span 1;
+    height: 100%;
+    background-color: #00324A;
+}
+.right-section{
+    grid-column: span 1 / span 2;
+    background-color: #f7f7f7;
+    height: 100%;
+}
+.left-content{
+    padding: 1rem;
+}
+.profile-image
+{
+    display: block;
+    margin: auto;
+    border: 5px solid white;
+    border-radius: 30%;
+    width: 60%;
+}
+.name
+{
+    color: #f7f7f7;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.02px;
+    padding: 0.8rem;
+}
+.designation
+{
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 0.5rem;
+}
+.description
+{
+    color: white;
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 1rem;
+}
+.contact-item
+{
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.contact-item .icon a {
+    color: white;
+}
+.personal-details .icon{
+    color: #ffffff;
+    padding: .4rem 0;
+    display: flex;
+    align-items: center;
+}
+.personal-details .icon a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    
+}
+.skills
+{
+    color: #ffffff;
+    font-size: 0.75rem;
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1rem 0.5rem;
+}
+.skill-name{
+    color: #ffffff;
+    font-size: 0.65rem;
+    font-weight: 800;
+    text-align: left;
+    padding: 0.5rem 0;
+
+}
+.progress-bar{
+    border: 1px solid white;
+    height: 4px;
+    background-color: #ffffff;
+}
+.right-main-content
+{
+    padding: 2rem 3rem;
+}
+.right-title
+{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    letter-spacing: 1px;
+}
+.para{
+    padding: 0.5rem;
+    font-size:0.8rem;
+    line-height: 18px;
+    letter-spacing: 1px;
+
+}
+
+
+
+
+
+
+
+@media screen and (max-width:674px){
+    .main-content{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .profile img{
+        width: 40%;
+    }
+}
